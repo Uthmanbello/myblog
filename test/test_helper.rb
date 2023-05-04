@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# rubocop:disable Style/FrozenStringLiteralComment
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -15,3 +15,4 @@ module ActiveSupport
     # Add more helper methods to be used by all tests here...
   end
 end
+# rubocop:enable Style/FrozenStringLiteralComment
