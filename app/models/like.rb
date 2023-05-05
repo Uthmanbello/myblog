@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Top-level documentation comment for Like module
 class Like < ApplicationRecord
   belongs_to :user
   belongs_to :post

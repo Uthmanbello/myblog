@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Top-level documentation comment for Post module
 class Post < ApplicationRecord
   belongs_to :author, class_name: 'User'
   has_many :comments
@@ -7,7 +10,7 @@ class Post < ApplicationRecord
     author.update(posts_counter: author.posts.count)
   end
 
-  def recent_comments(n)
-    comments.order(created_at: :desc).limit(n)
+  def recent_comments(num)
+    comments.order(created_at: :desc).limit(num)
   end
 end
