@@ -52,9 +52,13 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/Uthmanbello/myblog
-- cd myblog
-- code . <!-- If you are using VS Code -->
+- `git clone https://github.com/Uthmanbello/myblog`
+- `cd myblog`
+- `code .` <!-- If you are using VS Code -->
+
+Open your terminal:
+
+Run: `rails c`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
