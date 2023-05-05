@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for ApplicationMailer module
 class ApplicationMailer < ActionMailer::Base
   default from: 'from@example.com'

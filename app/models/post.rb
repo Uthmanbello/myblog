@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for Post module
 class Post < ApplicationRecord
   belongs_to :author, class_name: 'User'
