@@ -1,5 +1,5 @@
 require_relative '../rails_helper'
-# rubocop:disable Metrics/BlockLength
+
 RSpec.describe User, type: :model do
   subject { User.new(name: 'Uthman', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer', posts_counter: 2) }
 
@@ -45,4 +45,3 @@ RSpec.describe User, type: :model do
     expect(subject.recent_posts).to eq(subject.posts.order(created_at: :desc).limit(3))
   end
 end
-# rubocop: enable Metrics/BlockLength
