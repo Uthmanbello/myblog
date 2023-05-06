@@ -1,8 +1,12 @@
+# frozen_string_literal: true
+
 require_relative '../rails_helper'
 
 RSpec.describe Like, type: :model do
-  user = User.create(name: 'Uthman', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer', posts_counter: 0)
-  post = Post.create(title: 'My journey', text: 'It all started when ...', comments_counter: 0, likes_counter: 0, author: user)
+  user = User.create(name: 'Uthman', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Programmer',
+                     posts_counter: 0)
+  post = Post.create(title: 'My journey', text: 'It all started when ...', comments_counter: 0, likes_counter: 0,
+                     author: user)
   subject { Like.new(author: user, post:) }
 
   before { subject.save }

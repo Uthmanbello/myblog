@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/BlockLength
 require_relative '../rails_helper'
 
 RSpec.describe Post, type: :model do
@@ -67,3 +70,4 @@ RSpec.describe Post, type: :model do
     expect(subject.recent_comments).to eq(subject.comments.order(created_at: :desc).limit(5))
   end
 end
+# rubocop: enable Metrics/BlockLength

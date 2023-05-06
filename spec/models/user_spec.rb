@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# rubocop:disable Metrics/BlockLength
 require_relative '../rails_helper'
 
 RSpec.describe User, type: :model do
@@ -45,3 +48,4 @@ RSpec.describe User, type: :model do
     expect(subject.recent_posts).to eq(subject.posts.order(created_at: :desc).limit(3))
   end
 end
+# rubocop: enable Metrics/BlockLength
