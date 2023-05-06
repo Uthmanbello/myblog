@@ -1,5 +1,5 @@
 require_relative '../rails_helper'
-# rubocop:disable Metrics/BlockLength
+
 RSpec.describe Post, type: :model do
   subject do
     Post.new(title: 'Hello', text: 'I am good at this', comments_counter: 2, likes_counter: 2, author_id: 2)
@@ -67,4 +67,3 @@ RSpec.describe Post, type: :model do
     expect(subject.recent_comments).to eq(subject.comments.order(created_at: :desc).limit(5))
   end
 end
-# rubocop: enable Metrics/BlockLength
