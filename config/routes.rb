@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get '/users', to: 'users#index'
+  get '', to: 'users#index'
 
   get '/users/:id', to: 'users#show'
 
