@@ -1,17 +1,21 @@
 <ul>
   <% @users.each do |user| %>
     <li>
-      <% if user.photo.present? %>
-        <%= image_tag user.photo, alt: "User Photo", class: "user-photo" %>
-      <% else %>
-        <span>No photo available</span>
-      <% end %>
-      <%= link_to user_path(user) do %>
-        <div class="user-info">
-          <span class="user-name"><%= user.name %></span>
-          <span class="post-count">Number of posts: <%= user.posts.count %></span>
+      <div class="user-div">
+        <div class="photo">
+        <% if user.photo.present? %>
+          <%= image_tag user.photo, alt: "User Photo", class: "user-photo" %>
+        <% else %>
+          <span>No photo available</span>
+        <% end %>
         </div>
-      <% end %>
+        <%= link_to user_path(user) do %>
+          <div class="user-info">
+            <span class="user-name"><%= user.name %></span>
+            <span class="post-count">Number of posts: <%= user.posts.count %></span>
+          </div>
+        <% end %>
+      </div>
     </li>
   <% end %>
 </ul>
