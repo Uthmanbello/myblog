@@ -1,2 +1,17 @@
-<h1>Post Title</h1>
-<p>Here is a post by a particular user</p>
+<div class="post wrap post-full">
+    <div>
+      <h4 class="title list-title post-title"><%= @post.title %> by <%= @post.author.name %></h4>
+      <p class="post-text"><%= @post.text %></p>
+    </div>
+      <div class="counters post-counters">
+      <p class="small">Comments: <%= @post.comments_counter %></p>
+
+      <p class="small">Likes: <%= @post.likes_counter %></p>
+      </div>
+</div>
+
+<div class="wrap comment">
+    <% @post.comments.each do |comment| %>
+        <p><%= comment.author.name %>: <%= comment.text %></p>
+    <% end %>
+  </div>
