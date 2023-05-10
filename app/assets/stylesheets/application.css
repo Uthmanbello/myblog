@@ -104,3 +104,17 @@ a {
   align-items: end;
   justify-content: space-between;
 }
+
+.see-all {
+  padding: 15px 40px;
+  border-radius: 40px;
+  background: linear-gradient(to right,#fe4f70 0%,#ffa387 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.see-all-wrap {
+  display: flex;
+  justify-content: center;
+}

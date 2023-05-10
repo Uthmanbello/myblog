@@ -18,8 +18,8 @@
 </div>
 
 <ul class="wrap">
-  <% @user.posts.each do |post| %>
-  <a class="post" href="<%= user_post_path(@user, post) %>">
+  <% @user.posts.limit(3).each do |post| %>
+    <li class="post">
     <div>
       <h4 class="title"><%= post.title %></h4>
       <p class="post-text"><%= post.text %></p>
@@ -28,6 +28,11 @@
       <p class="small">Comments: <%= post.comments_counter %></p>
       <p class="small">Likes: <%= post.likes_counter %></p>
       </div>
-    </a>
+    </li>
   <% end %>
 </ul>
+<div class="see-all-wrap">
+<%= link_to user_posts_path(@user) do %>
+<span class="see-all">See all posts</span>
+<% end %>
+</div>
