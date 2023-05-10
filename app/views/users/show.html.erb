@@ -1,6 +1,33 @@
-<h1>User: n/a</h1>
-<p>Bio: n/a</p>
-<p>Posts Counter: n/a</p>
+<div class="user-div">
+<div class="photo">
+<% if @user.photo.present? %>
+  <%= image_tag @user.photo, alt: "User Photo", class: "user-photo" %>
+<% else %>
+  <span>No photo available</span>
+<% end %>
+</div>
+<div class="user-info">
+<span class="user-name"><%= @user.name %></span>
+<span class="post-count">Number of posts: <%= @user.posts.count %></span>
+</div>
+</div>
 
-<h2>Posts</h2>
-<p>Here is a list of all posts by the above user</p>
+<div class="wrap bio">
+  <h4 class="title">Bio</h4>
+  <p><%= @user.bio %></p>
+</div>
+
+<ul class="wrap">
+  <% @user.posts.each do |post| %>
+    <li class="post">
+    <div>
+      <h4 class="title"><%= post.title %></h4>
+      <p><%= post.text %></p>
+    </div>
+      <div class="counters">
+      <p class="small">Comments: <%= post.comments_counter %></p>
+      <p class="small">Likes: <%= post.likes_counter %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>

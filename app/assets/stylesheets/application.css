@@ -17,6 +17,7 @@
 body {
   background-color: #121d2e;
   color: #e0e0e0;
+  padding: 20px;
 }
 
 * {
@@ -35,7 +36,7 @@ a {
 .user-div {
   display: flex;
   flex-direction: column;
-  padding: 10px 40px;
+  padding-bottom: 10px;
 }
 
 .photo {
@@ -46,6 +47,10 @@ a {
   font-size: 4em;
 }
 
+.post-count {
+  padding-top: 50px;
+}
+
 .user-info {
   display: flex;
   justify-content: space-around;
@@ -53,4 +58,36 @@ a {
   border: solid 1px rgb(63, 66, 80);
   border-radius: 80px;
   padding: 30px;
+}
+
+.wrap {
+  border: solid 1px rgb(63, 66, 80);
+  border-radius: 20px;
+  padding: 20px 70px;
+  font-size: 1.5em;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.post {
+  border-bottom: solid 1px rgb(63, 66, 80);
+  display: flex;
+  justify-content: space-between;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.small {
+  font-size: 0.7em;
+  padding-right: 20px;
+}
+
+.counters {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
