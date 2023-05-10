@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-# rubocop:disable Metrics/BlockLength
-ActiveRecord::Schema[7.0].define(version: 20_230_505_140_025) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_05_140025) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -58,8 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 20_230_505_140_025) do
 
   add_foreign_key 'comments', 'posts'
   add_foreign_key 'comments', 'users', column: 'author_id'
-  add_foreign_key 'likes', 'posts'
+  add_foreign_key 'like', 'posts'
   add_foreign_key 'likes', 'users'
   add_foreign_key 'posts', 'users', column: 'author_id'
 end
-# rubocop:enable Metrics/BlockLength
