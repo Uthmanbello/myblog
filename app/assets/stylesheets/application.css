@@ -67,6 +67,10 @@ a {
   font-size: 1.5em;
 }
 
+.bio {
+  margin-bottom: 40px;
+}
+
 .title {
   padding-bottom: 20px;
 }
@@ -80,10 +84,6 @@ a {
 .post_wrap {
   display: flex;
   justify-content: space-between;
-}
-
-.post:last-child {
-  border-bottom: none;
 }
 
 .post-text {
@@ -114,7 +114,26 @@ a {
   font-size: 1em;
 }
 
+.list {
+  margin-left: -40px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.list-title {
+  padding-bottom: 0;
+}
+
 .see-all-wrap {
   display: flex;
   justify-content: center;
+}
+
+.full-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  font-size: 0.9em;
 }

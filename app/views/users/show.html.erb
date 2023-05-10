@@ -17,11 +17,11 @@
   <p><%= @user.bio %></p>
 </div>
 
-<ul class="wrap">
+<ul>
   <% @user.posts.limit(3).each do |post| %>
-    <li class="post">
+    <li class="post wrap list">
     <div>
-      <h4 class="title"><%= post.title %></h4>
+      <h4 class="title list-title"><%= post.title %></h4>
       <p class="post-text"><%= post.text %></p>
     </div>
       <div class="counters">
