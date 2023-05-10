@@ -1,2 +1,18 @@
-<h1>All Users</h1>
-<p>Here is a list of all users</p>
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <% if user.photo.present? %>
+        <%= image_tag user.photo, alt: "User Photo", class: "user-photo" %>
+      <% else %>
+        <span>No photo available</span>
+      <% end %>
+      <%= link_to user_path(user) do %>
+        <div class="user-info">
+          <span class="user-name"><%= user.name %></span>
+          <span class="post-count">Number of posts: <%= user.posts.count %></span>
+        </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
