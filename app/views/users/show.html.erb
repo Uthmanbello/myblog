@@ -19,15 +19,15 @@
 
 <ul class="wrap">
   <% @user.posts.each do |post| %>
-    <li class="post">
+  <a class="post" href="<%= user_post_path(@user, post) %>">
     <div>
       <h4 class="title"><%= post.title %></h4>
-      <p><%= post.text %></p>
+      <p class="post-text"><%= post.text %></p>
     </div>
       <div class="counters">
       <p class="small">Comments: <%= post.comments_counter %></p>
       <p class="small">Likes: <%= post.likes_counter %></p>
       </div>
-    </li>
+    </a>
   <% end %>
 </ul>

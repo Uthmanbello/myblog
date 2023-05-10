@@ -77,8 +77,21 @@ a {
   justify-content: space-between;
 }
 
+.post_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .post:last-child {
   border-bottom: none;
+}
+
+.post-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .small {
