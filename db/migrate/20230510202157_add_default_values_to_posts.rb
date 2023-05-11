@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Top-level documentation comment for AddDefaultValuesToPosts module
 class AddDefaultValuesToPosts < ActiveRecord::Migration[7.0]
   def change
     change_column_default :posts, :comments_counter, 0
