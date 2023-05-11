@@ -3,7 +3,7 @@
 <% if @user.photo.present? %>
   <%= image_tag @user.photo, alt: "User Photo", class: "user-photo" %>
 <% else %>
-  <span>No photo available</span>
+  <span>No photo</span>
 <% end %>
 </div>
 <div class="user-info">
