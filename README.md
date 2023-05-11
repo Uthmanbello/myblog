@@ -58,7 +58,9 @@ Clone this repository to your desired folder:
 
 Open your terminal:
 
-Run: `rails s`
+Run:
+`bundle install`
+`rails s`
 
 After the server starts running, go to your browser and visit the following link:
 
