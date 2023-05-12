@@ -1,2 +1,36 @@
-<h1>User's Posts</h1>
-<p>Here is a list of all posts of a particular user</p>
+<div class="user-div">
+<div class="photo">
+<% if @user.photo.present? %>
+  <%= image_tag @user.photo, alt: "User Photo", class: "user-photo" %>
+<% else %>
+  <span>No photo</span>
+<% end %>
+</div>
+<div class="user-info">
+<span class="user-name"><%= @user.name %></span>
+<span class="post-count">Number of posts: <%= @user.posts_counter %></span>
+</div>
+</div>
+
+  <ul>
+  <% @user.posts.each do |post| %>
+  <a href="<%= user_post_path(@user, post) %>">
+    <li class="post wrap list">
+    <div>
+      <h4 class="title list-title"><%= post.title %></h4>
+      <p class="post-text"><%= post.text %></p>
+    </div>
+      <div class="counters">
+      <p class="small">Comments: <%= post.comments_counter %></p>
+      <p class="small">Likes: <%= post.likes_counter %></p>
+      </div>
+    </li>
+    </a>
+
+    <div class="wrap list comment">
+    <% post.comments.each do |comment| %>
+      <p><%= comment.author.name %>: <%= comment.text %></p>
+    <% end %>
+  </div>
+  <% end %>
+</ul>

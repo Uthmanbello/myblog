@@ -58,7 +58,13 @@ Clone this repository to your desired folder:
 
 Open your terminal:
 
-Run: `rails c`
+Run:
+`bundle install`
+`rails s`
+
+After the server starts running, go to your browser and visit the following link:
+
+`http://localhost:3000/`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
