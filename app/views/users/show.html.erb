@@ -35,4 +35,5 @@
 <%= link_to user_posts_path(@user) do %>
 <span class="see-all">See all posts</span>
 <% end %>
+<button type="button" class="see-all btn-post"><%= link_to "Create a post", new_user_post_path(@user)  %></button>
 </div>

@@ -1,0 +1,13 @@
+<%= form_with model: post, url: user_posts_path, local: true, class: "form" do |form| %>
+  <div>
+    <%= form.label :title %></br>
+    <%= form.text_field :title, class: "text-area title-area" %>
+  </div>
+  <div>
+    <%= form.label :text %></br>
+    <%= form.text_area :text, class: "text-area" %>
+  </div>
+  <div class='center'>
+    <%= form.submit "Create post", class: "see-all btn" %>
+  </div>
+<% end %>

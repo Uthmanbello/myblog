@@ -22,6 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
@@ -129,6 +130,15 @@ a {
   font-size: 1em;
 }
 
+.btn {
+  padding: 10px 15px;
+}
+
+.btn-post {
+  margin-left: 10px;
+  padding: 15px 20px;
+}
+
 .list {
   margin-left: -40px;
   margin-bottom: 20px;
@@ -142,6 +152,8 @@ a {
 .see-all-wrap {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .full-post {
@@ -151,4 +163,36 @@ a {
 
 .comment {
   font-size: 0.9em;
+}
+
+.text-area {
+  width: 30vw;
+  height: 5vw;
+  background-color: rgb(63, 66, 80);
+  color: #e0e0e0;
+}
+
+.title-area {
+  height: 2vw;
+}
+
+.like-comment-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.new-post {
+  display: flex;
+  flex-direction: column;
 }
