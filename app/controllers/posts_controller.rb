@@ -9,4 +9,12 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:id])
   end
+
+  def like
+    @post = Post.find(params[:id])
+    @post.likes_counter += 1
+    @post.save
+    redirect_to user_post_path(@user, @post)
+  end
+  
 end
