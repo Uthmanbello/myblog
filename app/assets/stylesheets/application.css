@@ -152,3 +152,10 @@ a {
 .comment {
   font-size: 0.9em;
 }
+
+.text-area {
+  width: 30vw;
+  height: 5vw;
+  background-color: rgb(63, 66, 80);
+  color: #e0e0e0;
+}

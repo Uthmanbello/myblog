@@ -18,4 +18,13 @@ Rails.application.routes.draw do
       post 'like', on: :member
     end
   end
+
+
+  resources :users, only: [:index, :show] do
+    resources :posts, only: [:index, :show, :new, :create] do
+      resources :comments, only: [:new, :create]
+      resources :likes, only: [:create]
+    end
+  end 
+  
 end
