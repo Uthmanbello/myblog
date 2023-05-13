@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Top-level documentation comment for LikesController module
 class LikesController < ApplicationController
   def create
