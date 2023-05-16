@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for PostsController module
 class PostsController < ApplicationController
   def index

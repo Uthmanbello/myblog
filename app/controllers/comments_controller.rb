@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for CommentsController module
 class CommentsController < ApplicationController
   def new

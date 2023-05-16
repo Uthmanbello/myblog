@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Create 10 users with randomized data
 10.times do
   User.create!(
@@ -30,10 +32,10 @@ end
   user = User.order(Arel.sql('RANDOM()')).first
   post = Post.order(Arel.sql('RANDOM()')).first
   # But only if the user hasn't liked the post yet
-  unless Like.exists?(author: user, post: post)
-    Like.create!(
-      author: user,
-      post:
-    )
-  end
+  next if Like.exists?(author: user, post:)
+
+  Like.create!(
+    author: user,
+    post:
+  )
 end
