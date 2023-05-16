@@ -20,6 +20,7 @@
 # 📖 [MY BLOG] <a name="about-project"></a>
 
 **[My Blog]** is a project created using Ruby on Rails for users to create posts. It can also allow users to comment on and like the posts
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -76,13 +77,19 @@ After the server starts running, go to your browser and visit the following link
 - Twitter: [@UthmanDeRoyale](https://twitter.com/UthmanDeRoyale)
 - LinkedIn: [Uthman Igein Bello-Imoukhuede](https://www.linkedin.com/in/uthmanbelloimoukhuede)
 
+👤 **Fábio Lima**
+
+- GitHub: [@limavfabio](https://github.com/limavfabio)
+- Twitter: [@limavfabio](https://twitter.com/limavfabio)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/limavfabio)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [Add pages] 
-- [Add UI] 
-- [Include basic styling] 
+- [Add pages]
+- [Add UI]
+- [Include basic styling]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
