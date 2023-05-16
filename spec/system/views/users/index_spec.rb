@@ -31,15 +31,15 @@ RSpec.describe 'User#Index', type: :system do
     end
   end
 
-#   describe 'when clicking on a username' do
-#     it 'redirects to the user profile page on ALL users' do
-#       visit users_path
+  describe 'when clicking on a username' do
+    it 'redirects to the user profile page on ALL users' do
+      visit users_path
 
-#       User.all.each do |user|
-#         click_on user.name
-#         expect(page).to have_current_path(user_path(user.id))
-#         visit users_path
-#       end
-#     end
-#   end  
+      User.all.each do |user|
+        click_on user.name
+        expect(page).to have_current_path(user_path(user.id))
+        visit users_path
+      end
+    end
+  end  
 end
