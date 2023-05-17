@@ -1,3 +1,4 @@
 # Top-level documentation comment for ApplicationController module
 class ApplicationController < ActionController::Base
+  before_action :authenticate_user!
 end

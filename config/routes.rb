@@ -1,9 +1,15 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  # devise_for :users
+  # root 'users#index'
+  # get '', to: 'users#index'
+
   devise_for :users
-  root 'users#index'
+# authenticated :user do
+  root to: 'users#index'
   get '', to: 'users#index'
+# end
 
   resources :users, only: %i[index show] do
     resources :posts, only: %i[index show new create] do
