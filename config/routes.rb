@@ -5,8 +5,12 @@ Rails.application.routes.draw do
   # root 'users#index'
   # get '', to: 'users#index'
 
-  devise_for :users
+  # devise_for :users
 # authenticated :user do
+
+devise_for :users, controllers: {
+  sessions: 'users/sessions'
+}
   root to: 'users#index'
   get '', to: 'users#index'
 # end
