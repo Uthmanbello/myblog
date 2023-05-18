@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Top-level documentation comment for PostsController module
 class PostsController < ApplicationController
   before_action :authenticate_user!
