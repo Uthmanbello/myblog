@@ -1,19 +1,16 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # devise_for :users
-  # root 'users#index'
-  # get '', to: 'users#index'
-
-  # devise_for :users
-# authenticated :user do
 
 devise_for :users, controllers: {
   sessions: 'users/sessions'
 }
-  root to: 'users#index'
-  get '', to: 'users#index'
-# end
+
+authenticated :user do
+  root to: 'users#index', as: :authenticated_root
+end
+
+root to: redirect('/users/sign_in')
 
   resources :users, only: %i[index show] do
     resources :posts, only: %i[index show new create] do
