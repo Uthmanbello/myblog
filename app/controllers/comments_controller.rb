@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for CommentsController module
 class CommentsController < ApplicationController
   before_action :authenticate_user!
-  
+
   def new
     @comment = Comment.new
   end

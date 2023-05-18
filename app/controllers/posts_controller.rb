@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for PostsController module
 class PostsController < ApplicationController
-before_action :authenticate_user!
+  before_action :authenticate_user!
 
   def index
     @user = User.find(params[:user_id])
