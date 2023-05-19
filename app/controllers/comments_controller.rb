@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for CommentsController module
 class CommentsController < ApplicationController
   # load_and_authorize_resource

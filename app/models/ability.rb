@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Top-level documentation comment for Ability module
 class Ability
   include CanCan::Ability
 

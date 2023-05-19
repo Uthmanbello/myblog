@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for UsersController module
 class UsersController < ApplicationController
   # load_and_authorize_resource

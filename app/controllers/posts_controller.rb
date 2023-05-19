@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for PostsController module
 class PostsController < ApplicationController
   load_and_authorize_resource
@@ -41,13 +43,13 @@ class PostsController < ApplicationController
     comments.destroy_all
     likes.destroy_all
     authorize! :destroy, @post
-    
+
     if @post.destroy
       redirect_to user_posts_path, notice: 'Post deleted successfully.'
     else
       redirect_to user_posts_path, alert: 'Failed to delete the post.'
     end
-  end  
+  end
 
   private
 

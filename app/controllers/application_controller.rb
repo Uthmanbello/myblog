@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Top-level documentation comment for ApplicationController module
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
@@ -7,7 +9,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
   end
 
-  rescue_from CanCan::AccessDenied do | exception |
+  rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, alert: exception.message
   end
 
