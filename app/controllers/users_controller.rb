@@ -1,5 +1,6 @@
 # Top-level documentation comment for UsersController module
 class UsersController < ApplicationController
+  # load_and_authorize_resource
   before_action :authenticate_user!
 
   def index

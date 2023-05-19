@@ -34,9 +34,11 @@ class Ability
     if user.role == 'admin'
       can :destroy, Post
       can :destroy, Comment
+      can :manage, :all
     else
-      can :destroy, Post, user_id: user.id
-      can :destroy, Comment, user_id: user.id
+      can :manage, Post, author_id: user.id
+      can :manage, Comment, author_id: user.id
+      can :read, :all
     end
   end
 end
