@@ -22,7 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 ul {
@@ -208,4 +208,18 @@ a {
 
 .pad-left {
   margin-left: 20px;
+}
+
+.delete-button {
+  color: #fe4f70;
+  background: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.comment-button {
+  color: #fe4f70;
+  background: none;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
