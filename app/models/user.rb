@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Top-level documentation comment for User module
 class User < ApplicationRecord
   # Include default devise modules. Others available are:

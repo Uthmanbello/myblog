@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Devise
   # Top-level documentation comment for Devise module
   class RegistrationsController < Devise::RegistrationsController
