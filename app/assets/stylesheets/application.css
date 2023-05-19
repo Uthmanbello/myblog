@@ -22,7 +22,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ul {
@@ -195,4 +195,17 @@ a {
 .new-post {
   display: flex;
   flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: end;
+}
+
+.pad-up {
+  margin-top: 20px;
+}
+
+.pad-left {
+  margin-left: 20px;
 }

@@ -1,5 +1,7 @@
 # Top-level documentation comment for LikesController module
 class LikesController < ApplicationController
+  before_action :authenticate_user!
+
   def create
     @like = Like.new
     @like.author = current_user
