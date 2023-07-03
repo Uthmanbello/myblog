@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: myblog_development
+  database: myblog_development1
   username: postgres
   password: deroyale
 

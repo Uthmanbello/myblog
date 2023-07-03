@@ -4,11 +4,13 @@
     <li>
       <div class="user-div">
         <div class="photo">
-          <% if user.photo.present? %>
-            <%= image_tag user.photo, alt: "User Photo", class: "user-photo" %>
-          <% else %>
-            <span>No photo</span>
-          <% end %>
+          <%# <% if user.photo.present? %>
+            <%# <%= image_tag 'user 1.png', alt: "User Photo", class: "user-photo" %>
+          <%# <% else %>
+            <%# <span>No photo</span> %>
+          <%# <% end %>
+          <%= image_tag "user #{rand(1..7)}.png", alt: "User Photo", class: "user-photo" %>
+
         </div>
         <%= link_to user_path(user) do %>
           <div class="user-info">
