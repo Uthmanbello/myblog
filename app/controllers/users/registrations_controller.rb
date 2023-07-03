@@ -46,7 +46,7 @@ module Devise
     # end
 
     def configure_sign_up_params
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :bio, :photo])
+      devise_parameter_sanitizer.permit(:sign_up, keys: %i[name bio photo])
     end
 
     # If you have extra params to permit, append them to the sanitizer.
