@@ -1,7 +1,7 @@
 module Devise
   # Top-level documentation comment for Devise module
   class RegistrationsController < Devise::RegistrationsController
-    # before_action :configure_sign_up_params, only: [:create]
+    before_action :configure_sign_up_params, only: [:create]
     # before_action :configure_account_update_params, only: [:update]
 
     # GET /resource/sign_up
@@ -46,8 +46,7 @@ module Devise
     # end
 
     def configure_sign_up_params
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:bio])
+      devise_parameter_sanitizer.permit(:sign_up, keys: %i[name bio photo])
     end
 
     # If you have extra params to permit, append them to the sanitizer.
